@@ -1,0 +1,51 @@
+<!-- Carousel for Popular Products -->
+<ngb-carousel *ngIf="popularProducts" class="mb-4">
+  <ng-template *ngFor="let item of popularProducts" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a routerLink="/details/{{ item.id }}">
+        <img class="d-block w-100 product-header-image" src="{{ item.image }}" alt="{{ item.name }}" />
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ item.name }}</h3>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<!-- Add margin for spacing -->
+<div class="mb-5"> <br> </div>
+
+<!-- Container for Trendy Products -->
+
+<div class=" container mb-5">
+  <div class="product-list-wrapper">
+    <div class="heading-section">
+      <h4 class="heading-h4">Discover Exclusive NFTs</h4>
+      <div class="heading ">Trendy NFTs</div>
+      <div class="heading-p">
+        Explore a world of unique digital assets. Find exclusive NFTs, sell your own, or dive into the NFT community's
+        creativity.
+      </div>
+    </div> <br>
+    <div class="row">
+      <div class="col-md-3 col-sm-6" *ngFor="let item of trendyProducts">
+        <div class="card mb-4 card-hover"> <!-- Add the card-hover class here -->
+          <img class="card-img-top" src="{{ item.image }}" alt="{{ item.name }}" />
+          <div class="card-body">
+            <!-- Set a fixed height for the card title and card body -->
+            <h5 class="card-title" style="height: 2.5rem; overflow: hidden; text-overflow: ellipsis;">{{ item.name }}
+            </h5>
+            <p class="card-text" style="height: 3rem; overflow: hidden; text-overflow: ellipsis;">
+              <strong>Price:</strong> {{ item.price }}
+              <br>
+              <strong>Color:</strong> {{ item.color }}
+            </p>
+            <a routerLink="/details/{{ item.id }}" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

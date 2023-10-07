@@ -1,0 +1,63 @@
+<div class="row product-details" *ngIf="productData">
+  <div class="col-md-6">
+    <!-- Display the product image -->
+    <img class="img-fluid product-img" src="{{ productData.image }}" alt="{{ productData.name }}" />
+  </div>
+
+  <div class="col-md-6">
+    <div class="details">
+      <!-- Create a table-like container -->
+      <div class="table-like-container">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td><strong>Name:</strong></td>
+              <td colspan="3">{{ productData.name }}</td>
+            </tr>
+            <tr>
+              <td><strong>Price:</strong></td>
+              <td colspan="3">{{ productData.price }} INR</td>
+            </tr>
+            <tr>
+              <td><strong>Color:</strong></td>
+              <td>
+                <!-- Display the product color with a colored square -->
+                <div [style.backgroundColor]="productData.color" class="product-color"></div>
+              </td>
+              <!--
+              <td><strong>Category:</strong></td>
+              <td>{{ productData.category }}</td>
+              -->
+            </tr>
+            <tr>
+              <td colspan="4"><strong>Description:</strong></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="product-description">{{ productData.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4">
+        <!-- Depending on whether the product is in the cart, display "Remove from Cart" or "Add to Cart" button -->
+        <button *ngIf="removeCart" class="btn btn-danger btn-sm text-color" (click)="removeToCart(productData.id)">
+          Remove from Cart
+        </button>
+        <button *ngIf="!removeCart" class="btn btn-primary btn-sm text-color" (click)="addToCart()">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="mt-4 quantity-group">
+        <p class="text-color"><strong>Quantity:</strong></p>
+        <!-- Buttons to increment and decrement product quantity -->
+        <div class="quantity-control">
+          <button class="btn btn-outline-primary btn-sm text-color" (click)="handleQuantity('min')">-</button>
+          <input type="text" value="{{ productQuantity }}" class="quantity-input" />
+          <button class="btn btn-outline-primary btn-sm text-color" (click)="handleQuantity('plus')">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

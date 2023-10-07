@@ -1,0 +1,68 @@
+<div class="checkout mt-4">
+
+  <div class="heading-section">
+    <h4 class="heading-h4">Complete Your Purchase</h4>
+    <div class="heading ">Checkout</div>
+    <div class="heading-p">
+      It's time to finalize your order. Please provide your shipping address and payment information to complete your purchase.
+    </div>
+  </div> <br>
+
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Add Shipping Address</h3>
+      <p class="message-p">{{orderMsg}}</p>
+      <!-- Form for entering shipping address -->
+      <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Enter User Email"
+            ngModel
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name="address"
+            placeholder="Enter User Address"
+            ngModel
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name="contact"
+            placeholder="Enter Contact Details"
+            ngModel
+            required
+          />
+        </div>
+        <button class="btn btn-primary btn-block">Order Now</button>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <!-- Display total amount and payment method in a Bootstrap table -->
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="row" class="h4">Total Amount :</th>
+            <td><p class="h4 text-primary">{{totalPrice}} &nbsp; INR</p></td>
+          </tr>
+          <tr>
+            <th scope="row" class="h5">Payment Method :</th>
+            <td><p class="h5"><b>Pay on Delivery</b></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+

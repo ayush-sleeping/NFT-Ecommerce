@@ -1,0 +1,51 @@
+.auth-toggle-link {
+  color: whitesmoke;
+  cursor: pointer;
+  text-align: center;
+}
+
+.user-auth h1 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  color: #FFBA00;
+  text-align: center;
+}
+
+.user-auth {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.user-auth a {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
+
+.heading-section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header text heading section :: */
+.heading-h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Main heading heading section ::  */
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFBA00;
+}
+
+/* Paragraph text heading section ::  */
+.heading-p {
+  color: #a0a0a0;
+  margin: 0.2rem 0 0.2rem 1.5rem;
+  font-size: 1.1rem;
+}

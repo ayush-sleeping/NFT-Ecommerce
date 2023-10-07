@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="seller-auth"> <br> <br>
+
+        <!-- Seller Sign-up Form -->
+        <div *ngIf="!showLogin" class="sign-up">
+
+          <div class="heading-section">
+            <h4 class="heading-h4">Discover Exclusive NFTs</h4>
+            <div class="heading">Seller SignUp</div>
+            <div class="heading-p">
+              Join the NFT marketplace and explore unique digital assets. Sell your own NFTs or discover new ones in our exclusive collection.
+            </div>
+          </div> <br>
+
+          <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  name="name"
+                  ngModel
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Password"
+                  name="password"
+                  ngModel
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+                name="email"
+                ngModel
+                required
+              />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+            <p class="auth-toggle-link mt-3" (click)="openLogin()">Already have an account? Click here to Login</p>
+          </form>
+        </div>
+
+         <!-- Seller Login Form -->
+        <div *ngIf="showLogin" class="login">
+          <div class="heading-section">
+            <h4 class="heading-h4">Discover Exclusive NFTs</h4>
+            <div class="heading">Seller Login</div>
+            <div class="heading-p">
+              Access your NFT seller account. Manage your digital assets and engage with the NFT community in our exclusive platform.
+            </div>
+          </div> <br>
+          <p class="error-p">{{ authError }}</p>
+          <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+                name="email"
+                ngModel
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter Password"
+                name="password"
+                ngModel
+                required
+              />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Login</button>
+            <p class="auth-toggle-link mt-3" (click)="openSignUp()">Don't have an account? Click here to Sign Up</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

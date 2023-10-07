@@ -1,0 +1,23 @@
+<div class="row search-item" *ngFor="let item of searchResult">
+
+  <div class="col-md-3">
+    <!-- Display the product image with a link to the product details page -->
+    <a routerLink="/details/{{ item.id }}">
+      <img src="{{ item.image }}" alt="{{ item.name }}" class="img-fluid" />
+    </a>
+  </div>
+
+  <div class="col-md-9 details">
+    <!-- Display product name as a link to the product details page -->
+    <h6><a routerLink="/details/{{ item.id }}">{{ item.name }}</a></h6>
+    <p><strong>Price:</strong> {{ item.price }}</p>
+    <div class="d-flex justify-content-between">
+      <!-- Display product color and category -->
+      <p><strong>Color:</strong> {{ item.color }}</p>
+      <p><strong>Category:</strong> {{ item.category }}</p>
+    </div>
+    <!-- Display product description -->
+    <p>{{ item.description }}</p>
+  </div>
+
+</div>

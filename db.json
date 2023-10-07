@@ -1,0 +1,280 @@
+{
+  "seller": [
+    {
+      "name": "Ayush Mishra",
+      "email": "ayush@seller.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Sanket Mishra",
+      "email": "Sanket@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "Shivam",
+      "password": "abc@123",
+      "email": "shivam@seller.com",
+      "id": 3
+    },
+    {
+      "name": "Ashish",
+      "password": "abc@123",
+      "email": "ashish@seller.com",
+      "id": 4
+    },
+    {
+      "name": "Arpita S",
+      "password": "abc@123",
+      "email": "arpita@seller.com",
+      "id": 5
+    },
+    {
+      "name": "Prathmesh G",
+      "password": "abc@123",
+      "email": "prath@seller.com",
+      "id": 6
+    },
+    {
+      "name": "Shivam P",
+      "password": "abc@123",
+      "email": "shivam@seller.com",
+      "id": 7
+    },
+    {
+      "name": "sdfbsdk",
+      "password": "abc@123",
+      "email": "dfsd@seller.com",
+      "id": 8
+    },
+    {
+      "name": "skdfb",
+      "password": "abc@123",
+      "email": "dfd@seller.com",
+      "id": 9
+    },
+    {
+      "name": "Anil",
+      "password": "abc@123",
+      "email": "anil@seller.com",
+      "id": 10
+    },
+    {
+      "name": "Ahan M ",
+      "password": "abc@123",
+      "email": "ahan@seller.com",
+      "id": 11
+    },
+    {
+      "name": "Sanket Mishra",
+      "email": "Sanket@seller.com",
+      "password": "abc@123",
+      "id": 12
+    },
+    {
+      "name": "Anil",
+      "password": "abc@123",
+      "email": "anil@seller.com",
+      "id": 13
+    }
+  ],
+  "products": [
+    {
+      "name": "MetaBillionaire #6837",
+      "price": "250000",
+      "category": "NFT ",
+      "color": "Red",
+      "description": "The METABILLIONAIRE is a collection of 7,777 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain.\n",
+      "image": "https://i.pinimg.com/564x/2d/31/fa/2d31fab338200c605945e84e59dd4b24.jpg",
+      "id": 1
+    },
+    {
+      "name": "Macaco #777",
+      "price": "750000",
+      "category": "NFT",
+      "color": "Red",
+      "description": "The Macaco is a collection of 827unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/0b/80/51/0b8051e37168c1d6092de82ce8aa2ace.jpg",
+      "id": 2
+    },
+    {
+      "name": "Bunny Bear #569",
+      "price": "125000",
+      "category": "NFT",
+      "color": "Green",
+      "description": "The Bunny Bear is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/0c/c5/3e/0cc53e0a328d4091bd23a7066790d1fe.jpg",
+      "id": 3
+    },
+    {
+      "name": "Pandas #336",
+      "price": "90000",
+      "category": "NFT",
+      "color": "Blue",
+      "description": "The Pandas #336 is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/18/a2/b6/18a2b6f9163260058d8407f231c1e338.jpg",
+      "id": 4
+    },
+    {
+      "name": "Macaco #259",
+      "price": "925000",
+      "category": "Macaco NFT",
+      "color": "Black",
+      "description": "The Macaco #259 is a collection of 827 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/d1/a7/26/d1a726b64538d81b5bdef24e04a1c86d.jpg",
+      "id": 5
+    },
+    {
+      "name": "Coringa macaco #759",
+      "price": "750000",
+      "category": "Macaco NFT",
+      "color": "Purple",
+      "description": "The Macaco #759 is a collection of 827unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/736x/ec/f7/db/ecf7dbb5859fafb407e6f4fc326fd930.jpg",
+      "id": 6
+    },
+    {
+      "name": "Egyptian macaco #336",
+      "price": "550000",
+      "category": "Macaco NFT",
+      "color": "Yellow",
+      "description": "The Egyptian macaco #336  is a collection of 827unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/df/91/e5/df91e5fdfb5e6ce1571e82c1a1e868cd.jpg",
+      "id": 7
+    },
+    {
+      "name": "MetaBillionaire #4648",
+      "price": "460000",
+      "category": "MetaBillionaire NFT",
+      "color": "Yellow",
+      "description": "The METABILLIONAIRE is a collection of 7,777 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/18/2b/22/182b22dccf6629c9bd13751b1dfd5e83.jpg",
+      "id": 8
+    },
+    {
+      "name": "MetaBillionaire #7287",
+      "price": "500000",
+      "category": "MetaBillionaire NFT",
+      "color": "Black",
+      "description": "The METABILLIONAIRE is a collection of 7,777 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/736x/dc/74/41/dc74418c5eb73c80f357d6bb819b0ee7.jpg",
+      "id": 9
+    },
+    {
+      "name": "MetaBillionaire #22",
+      "price": "870000",
+      "category": "MetaBillionaire NFT",
+      "color": "Green",
+      "description": "The METABILLIONAIRE is a collection of 7,777 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/c1/a2/34/c1a234205e23521b310796781ddd2a03.jpg",
+      "id": 10
+    },
+    {
+      "name": "Bunny Bear #87",
+      "price": "670000",
+      "category": "Bear NFT",
+      "color": "Red",
+      "description": "The Bunny Bear is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/1b/cb/1f/1bcb1f7cd7e941c25910809a3fcc9a11.jpg",
+      "id": 11
+    },
+    {
+      "name": "StarWars Bunny Bear #95",
+      "price": "400000",
+      "category": "Bear NFT",
+      "color": "Black",
+      "description": "The Bunny Bear is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/c2/15/f5/c215f514a431d093e7746b5331deabd1.jpg",
+      "id": 12
+    },
+    {
+      "name": "Bunny Bear #50",
+      "price": "360000",
+      "category": "Bear NFT",
+      "color": "Maroon",
+      "description": "The Bunny Bear is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/b2/13/ab/b213ab37724566d01f5affdaf797ce7f.jpg",
+      "id": 13
+    },
+    {
+      "name": "CloneX #17820",
+      "price": "100000",
+      "category": "Clone NFT",
+      "color": "red",
+      "description": "CloneX #17820 is a collection of 25600 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/04/03/41/040341719d814bf24502e952375788b9.jpg",
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "name": "Ayush",
+      "email": "ayushbm84@gmail.com",
+      "password": "Ayush12345",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "Anil",
+      "password": "abc@123",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "Egyptian macaco #336",
+      "price": "550000",
+      "category": "Macaco NFT",
+      "color": "Yellow",
+      "description": "The Egyptian macaco #336  is a collection of 827unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/df/91/e5/df91e5fdfb5e6ce1571e82c1a1e868cd.jpg",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "name": "StarWars Bunny Bear #95",
+      "price": "400000",
+      "category": "Bear NFT",
+      "color": "Black",
+      "description": "The Bunny Bear is a collection of 987 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain. ",
+      "image": "https://i.pinimg.com/564x/c2/15/f5/c215f514a431d093e7746b5331deabd1.jpg",
+      "quantity": 2,
+      "productId": 12,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "name": "MetaBillionaire #6837",
+      "price": "250000",
+      "category": "NFT ",
+      "color": "Red",
+      "description": "The METABILLIONAIRE is a collection of 7,777 unique MB NFTs - unique digital collectibles living on the Ethereum blockchain.\n",
+      "image": "https://i.pinimg.com/564x/2d/31/fa/2d31fab338200c605945e84e59dd4b24.jpg",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 9
+    }
+  ],
+  "orders": [
+    {
+      "email": "ayush@gmail.com",
+      "address": "Mumbai India",
+      "contact": "9876543210",
+      "totalPrice": 100100,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "ayush@gmail.com",
+      "address": "Mumbai India",
+      "contact": "3486789",
+      "totalPrice": 1790100,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}

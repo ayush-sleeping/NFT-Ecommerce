@@ -1,0 +1,50 @@
+<div class="product-list">
+
+  <div class="heading-section">
+    <h4 class="heading-h4">Manage Your Products</h4>
+    <div class="heading ">Product List</div>
+    <div class="heading-p">
+      View and manage the products you have listed on our platform. Edit their details or remove them as needed to optimize your offerings.
+    </div>
+  </div> <br>
+
+  <p class="message-p">{{ productMessage }}</p>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productList">
+          <td><img src="{{ item.image }}" alt="{{ item.name }}" class="img-thumbnail" width="80" height="80" /></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.color }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td>
+            <!-- Delete Product Icon -->
+            <fa-icon (click)="deleteProduct(item.id)" [icon]="icon" class="text-danger"></fa-icon>
+            <!-- Update Product Link -->
+            <a routerLink="/seller-update-product/{{item.id}}" class="adjust-update-link">
+              <fa-icon [icon]="iconEdit" class="text-primary"></fa-icon>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
+
+

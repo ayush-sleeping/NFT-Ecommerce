@@ -1,0 +1,30 @@
+<div class="update-product">
+
+  <div class="heading-section">
+    <h4 class="heading-h4">Manage Your Products</h4>
+    <div class="heading">Update Product</div>
+    <div class="heading-p">
+      Welcome to the product update page, where you can fine-tune the details of your listed items. Ensure your digital assets are accurately represented in our collection.
+    </div>
+  </div> <br>
+
+  <p class="message-p">{{ productMessage }}</p>
+  <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+
+     <!-- Input fields for updating product information -->
+    <input type="text" class="form-input" placeholder="Enter Product Name" name="name"
+      ngModel="{{ productData?.name }}" />
+    <input type="text" class="form-input" placeholder="Enter Product Price" name="price"
+      ngModel="{{ productData?.price }}" />
+    <input type="text" class="form-input" placeholder="Enter Product Category" name="category"
+      ngModel="{{ productData?.category }}" />
+    <input type="text" class="form-input" placeholder="Enter Product Color" name="color"
+      ngModel="{{ productData?.color }}" />
+    <textarea type="text" class="form-input" placeholder="Enter Product Description" name="description"
+      ngModel="{{ productData?.description }}"></textarea>
+
+    <input type="text" class="form-input" placeholder="Enter Product Image URL" name="image"
+      ngModel="{{ productData?.image }}" />
+    <button class=" max-width btn btn-success btn-block mt-3">Update Product</button>
+  </form>
+</div>

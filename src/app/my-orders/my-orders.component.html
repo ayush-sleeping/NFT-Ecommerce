@@ -1,0 +1,50 @@
+<div class="my-orders">
+  <div class="heading-section">
+    <h4 class="heading-h4">Your Orders</h4>
+    <div class="heading">View and Manage Your Orders</div>
+    <div class="heading-p">
+      Explore your order history, track your deliveries, and manage your purchases easily in one place.
+    </div>
+  </div> <br>
+
+  <!-- Table to display orders -->
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" class="col-md-2"><strong>Orders</strong></th>
+          <th scope="col" class="col-md-2"><strong>Order Id</strong></th>
+          <th scope="col" class="col-md-2"><strong>Price</strong></th>
+          <th scope="col" class="col-md-2"><strong>Status</strong></th>
+          <th scope="col" class="col-md-2"><strong>Action</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Display orders in rows -->
+        <tr *ngFor="let order of orderData">
+          <td>
+            <!-- Display an image (placeholder) for the order -->
+            <img class="order-img img-fluid"
+              src="https://www.clipartmax.com/png/middle/210-2106541_track-my-order-beach-volleyball.png" alt="">
+          </td>
+          <td>
+            <!-- Display the order ID -->
+            #{{ order.id }}
+          </td>
+          <td>
+            <!-- Display the total price of the order -->
+            {{ order.totalPrice }}
+          </td>
+          <td>
+            <!-- Display the order status (In Progress) -->
+            In Progress
+          </td>
+          <td>
+            <!-- Button to cancel the order -->
+            <button class="btn btn-danger" (click)="cancelOrder(order.id)">Cancel Order</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

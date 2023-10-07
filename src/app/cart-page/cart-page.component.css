@@ -1,0 +1,120 @@
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header text heading section :: */
+.heading-h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Main heading heading section ::  */
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFBA00;
+}
+
+/* Paragraph text heading section ::  */
+.heading-p {
+  color: #a0a0a0;
+  margin: 0.2rem 0 0.2rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cart-page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Style the cart items container */
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between cart items as needed */
+}
+
+/* Style each cart item */
+.cart-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  max-width: 300px; /* Adjust the maximum width of cart items as needed */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the cart item image */
+.item-image img {
+  max-width: 100%;
+  max-height: 150px; /* Adjust the maximum height of item images as needed */
+  object-fit: contain;
+}
+
+/* Style the item details (name, price, quantity) */
+.item-details {
+  margin-top: 10px;
+}
+
+/* Style the item name */
+.item-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style the item price and quantity */
+.item-price,
+.item-quantity {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Style the remove button */
+.item-actions button {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-actions button:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: 0.3s;
+}
+.summary {
+  margin-bottom: 20px;
+}
+.summary h3{
+  text-align: center;
+}
+
+.summary ul {
+  border: 1px solid #ddd;
+  list-style-type: none;
+  padding: 15px;
+}
+.summary ul li{
+  display: flex;
+  justify-content: space-between;
+}

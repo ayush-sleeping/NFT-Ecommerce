@@ -1,0 +1,72 @@
+<div class="cart-page">
+
+  <div class="heading-section">
+    <h4 class="heading-h4">Discover Exclusive NFTs</h4>
+    <div class="heading">Your NFT Cart</div>
+    <div class="heading-p">
+      Welcome to your NFT cart, where you can review and manage your selected digital assets. Explore our exclusive
+      collection of NFTs!
+    </div>
+  </div> <br>
+
+  <!-- Centered container for cart items and summary -->
+  <div class="centered-container">
+    <!-- Displaying cart items using ngFor directive -->
+    <div class="col-md-8 details">
+      <div class="cart-items">
+        <div *ngFor="let cart of cartData" class="cart-item">
+          <div class="item-image">
+            <img src="{{ cart.image }}" alt="{{ cart.name }}" />
+          </div>
+          <div class="item-details">
+            <div class="item-name">{{ cart.name }}</div>
+            <div class="item-price">Price: {{ cart.price }}</div>
+            <div class="item-quantity">Quantity: {{ cart.quantity }}</div>
+          </div>
+          <div class="item-actions">
+            <button class="btn btn-danger" (click)="removeToCart(cart.id)">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <!-- Displaying summary of cart -->
+    <div class="col-md-4 summary mt-4">
+      <div class="heading-section">
+        <h4 class="heading-h4">Review and Checkout</h4>
+        <div class="heading-p">
+          Take a final look at your NFTs before proceeding to checkout. Enjoy collecting unique digital assets with us!
+        </div>
+      </div> <br>
+      <ul class="list-group">
+        <!-- Displaying Amount, Tax, Delivery, and Discount -->
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Amount:</span><span>{{ priceSummary.price }}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Tax:</span><span>{{ priceSummary.tax }}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Delivery:</span><span>{{ priceSummary.delivery }}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Discount:</span><span>{{ priceSummary.discount }}</span>
+        </li>
+        <!-- Displaying Total -->
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>
+            <h4>Total</h4>
+          </span>
+          <span>
+            <h4>{{ priceSummary.total }}</h4>
+          </span>
+        </li>
+        <!-- Checkout button -->
+        <button (click)="checkout()" class="max-width btn btn-success btn-block mt-3">
+          Checkout
+        </button>
+      </ul>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,90 @@
+<div class="add-product">
+
+  <div class="heading-section">
+    <h4 class="heading-h4">Become a Seller</h4>
+    <div class="heading">Add Your Product to Our Marketplace</div>
+    <div class="heading-p">
+      Join our vibrant marketplace and showcase your products to a wide audience. Start selling today and unlock new opportunities for your business.
+    </div>
+  </div> <br>
+
+  <!-- Display success or error message after submitting the form -->
+  <p class="message-p">{{ addProductMessage }}</p>
+
+  <!-- Form for adding a new product with labels on the left -->
+  <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form form-rectangle">
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="productName"
+          placeholder="Product Name"
+          name="name"
+          ngModel
+          required
+        />
+      </div>
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="productPrice"
+          placeholder="Product Price"
+          name="price"
+          ngModel
+          required
+        />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="productCategory"
+          placeholder="Product Category"
+          name="category"
+          ngModel
+          required
+        />
+      </div>
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="productColor"
+          placeholder="Product Color"
+          name="color"
+          ngModel
+          required
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        id="productDescription"
+        placeholder="Product Description"
+        name="description"
+        ngModel
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        id="productImage"
+        placeholder="Enter Product Image URL"
+        name="image"
+        ngModel
+        required
+      />
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary btn-block">Add Product</button>
+    </div>
+  </form>
+
+</div>

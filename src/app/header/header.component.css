@@ -1,0 +1,42 @@
+nav{
+  background-color:rgb(77, 76, 76);
+}
+.navbar-brand{
+  color:  #FFBA00;
+}
+
+.nav-link{
+  color: whitesmoke;
+}
+.custom-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2px;
+  border-radius: 6px;
+}
+.suggested-search{
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 300px;
+  list-style-type: none;
+}
+.suggested-search li {
+  padding:5px;
+  border: 1px solid #ddd;
+}
+.suggested-search li a{
+  cursor: pointer;
+  color: blueviolet;
+}
+.custom-search-btn {
+  border-color: #FFBA00; /* Yellow color */
+  color: whitesmoke; /* Black text color, adjust as needed */
+}
+.custom-search-btn:hover {
+  background-color: #FFBA00; /* Yellow color on hover */
+  border-color: #FFBA00; /* Yellow color on hover */
+  color: #000; /* Black text color on hover, adjust as needed */
+}

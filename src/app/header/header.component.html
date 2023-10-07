@@ -1,0 +1,110 @@
+<!-- Header Navigation Bar -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">NFT SHOP</a>
+
+    <!-- Navbar Toggler for Mobile View -->
+    <button class="navbar-toggler custom-toggler-icon" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <!-- Navbar Content based on menuType using ngSwitch -->
+    <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Default Menu -->
+      <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Navigation Links for Default Menu -->
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-auth">Seller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-add-product">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-home">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">{{ sellerName | titlecase }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()" href="">Seller-Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="user-auth">User-Login/Sign-up</a>
+        </li>
+      </ul>
+      <!-- ------------------------------------------------------------------------  -->
+      <!-- User Menu -->
+      <ul *ngSwitchCase="'user'" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navigation Links for User Menu -->
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-auth">Seller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">{{ userName | titlecase }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="cartItems > 0 ? 'cart-page' : null">Cart({{ cartItems }})</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="my-orders">My Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="userLogout()" href="">Logout</a>
+        </li>
+      </ul>
+      <!-- ------------------------------------------------------------------------  -->
+      <!-- Seller Menu -->
+      <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navigation Links for Seller Menu -->
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-add-product">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-home">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">{{ sellerName | titlecase }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+      <!-- ------------------------------------------------------------------------  -->
+      <!-- Search Bar -->
+      <div *ngIf="menuType !== 'seller'" class="nav-search">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" #searchInput (keyup)="searchProduct($event)"
+            (blur)="hideSearch()" placeholder="Search Products" aria-label="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0 custom-search-btn"
+            (click)="submitSearch(searchInput.value)">
+            Search
+          </button>
+
+
+          <!-- Display suggested search results -->
+          <ul class="suggested-search list-group" *ngIf="searchResult">
+            <li class="list-group-item" *ngFor="let item of searchResult">
+              <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</nav>

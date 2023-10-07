@@ -1,0 +1,54 @@
+table{
+  text-align: center;
+  color: blueviolet;
+  border-collapse: collapse;
+}
+.product-list{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.product-list h1{
+  text-align: center;
+  color: #FFBA00;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+table td , table th{
+  border: 1px solid blueviolet;
+  padding: 10px;
+  min-width: 160pxs;
+}
+.adjust-update-link{
+  margin-left: 10px;
+}
+
+.heading-section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header text heading section :: */
+.heading-h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Main heading heading section ::  */
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFBA00;
+}
+
+/* Paragraph text heading section ::  */
+.heading-p {
+  color: #a0a0a0;
+  margin: 0.2rem 0 0.2rem 1.5rem;
+  font-size: 1.1rem;
+}
